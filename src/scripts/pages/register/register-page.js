@@ -1,7 +1,11 @@
 // src/scripts/pages/register/register-page.js
-import { register } from '../../data/api';
+import RegisterPresenter from './register-presenter';
 
 export default class RegisterPage {
+  constructor() {
+    this.presenter = new RegisterPresenter(this);
+  }
+
   async render() {
     return `
       <section class="container login-container vertical-center">
@@ -30,12 +34,15 @@ export default class RegisterPage {
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
-      const response = await register(name, email, password);
-      alert(response.message);
-      if (!response.error) {
-        // Handle successful registration (e.g., redirect to login page)
-        window.location.hash = '/login';
-      }
+      await this.presenter.handleRegister(name, email, password);
     });
+  }
+
+  showError(message) {
+    alert(message); // Show error message
+  }
+
+  redirectToLogin() {
+    window.location.hash = '/login'; // Redirect to login page
   }
 }

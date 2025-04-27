@@ -1,7 +1,11 @@
 // src/scripts/pages/login/login-page.js
-import { login } from '../../data/api';
+import LoginPresenter from './login-presenter';
 
 export default class LoginPage {
+  constructor() {
+    this.presenter = new LoginPresenter(this);
+  }
+
   async render() {
     return `
       <section class="container login-container vertical-center">
@@ -26,16 +30,20 @@ export default class LoginPage {
     const loginForm = document.getElementById('login-form');
     loginForm.classList.add('show'); // Show the form with animation
 
-    document.getElementById('login-form').addEventListener('submit', async (e) => {
+    document.getElementById('login-form').addEventListener('submit', (e) => {
       e.preventDefault();
       progressBar.classList.add('active'); // Show progress bar
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
-      const response = await login(email, password);
-      progressBar.classList.remove('active'); // Hide progress bar
-      if (!response.error) {
-        window.location.hash = '/'; // Redirect to home page
-      }
+      this.presenter.handleLogin(email, password);
     });
+  }
+
+  showError(message) {
+    alert(message); // Show error message
+  }
+
+  redirectToHome() {
+    window.location.hash = '/'; // Redirect to home page
   }
 }

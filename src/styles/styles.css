@@ -350,3 +350,12 @@ footer {
   border-radius: 4px; /* Keep the border radius for aesthetics */
   border: 1px solid #ccc; /* Optional: Add a border for better visibility */
 }
+
+/* Add this to your styles.css */
+.story-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}

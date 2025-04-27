@@ -1,7 +1,11 @@
 // src/scripts/pages/add/add-page.js
-import { addStory } from '../../data/api';
+import AddPresenter from './add-presenter';
 
 export default class AddPage {
+  constructor() {
+    this.presenter = new AddPresenter(this);
+  }
+
   async render() {
     return `
       <section class="container login-container vertical-center">
@@ -13,7 +17,7 @@ export default class AddPage {
           
           <label for="photo">Photo:</label>
           <input type="file" id="photo" accept="image/*" required aria-required="true">
-          <img id="image-preview" src="" alt="Image Preview" style="display: none;" />
+          <img id="image-preview" src="" alt="Image Preview" style="display: none; margin-top: 10px; max-width: 100%; border-radius: 4px;" />
           
           <button type="submit">Add Story</button>
         </form>
@@ -43,12 +47,17 @@ export default class AddPage {
       e.preventDefault();
       const description = document.getElementById('description').value;
       const photo = document.getElementById('photo').files[0];
-      const response = await addStory(description, photo);
-      alert(response.message);
-      
-      // Optionally, reset the form and hide the image preview after submission
-      document.getElementById('add-story-form').reset();
-      imagePreview.style.display = 'none'; // Hide the image preview after submission
+      const lat = null; // Replace with actual latitude if needed
+      const lon = null; // Replace with actual longitude if needed
+      await this.presenter.handleAddStory(description, photo, lat, lon);
     });
+  }
+
+  showError(message) {
+    alert(message); // Show error message
+  }
+
+  redirectToHome() {
+    window.location.hash = '/'; // Redirect to home page
   }
 }
