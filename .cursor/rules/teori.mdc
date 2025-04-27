@@ -1,0 +1,72 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+TEORI
+
+Pengkodean usahakan berdasarkan teori berikut sebagai acuan utama :
+[AA001 Pengantar Aksesibilitas _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html](mdc:document/Teori/AA001 Pengantar Aksesibilitas _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html)
+[AA002 Pengenalan Aksesibilitas _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html](mdc:document/Teori/AA002 Pengenalan Aksesibilitas _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html)
+@AA003 Prinsip-Prinsip Aksesibilitas _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AA004 Navigasi dengan Keyboard _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AA005 Latihan_ Mencoba Focus _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AA006 Mengatur Focusable Element _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AA007 Skip to Content _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AA008 Semantik dan Screen Reader _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AA009 Latihan_ Mencoba Screen Reader _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AA010 Semantic Properties & Accessibility Tree _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AA011 ARIA dan HTML _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AA012 Heading dan Sectioning _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AA013 Label dan Alternatif Teks _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AA014 Typography _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AA015 Peran JavaScript _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AA017 Latihan Studi Kasus_ Memperbaiki Aksesibilitas Website _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AA018 Rangkuman Aksesibilitas _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB001 Pengantar Transisi dan Animasi _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB002 Pengenalan View Transition API _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB003 Transisi untuk SPA dan MPA _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB004 Latihan_ Membangun SPA Pertama _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB005 SPA dengan MVP Pattern _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB006 Latihan_ Membangun Aplikasi dengan MVP Pattern _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB007 Transisi Halaman untuk SPA _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB008 Pseudo-Element Tree _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB009 Animation API, Solusi Custom Transition _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB010 Debugging Transition _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB0011  Transisi Halaman untuk MPA _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB012 Mengatur Transisi Banyak Element _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB013 Transisi untuk Elemen Berbeda _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB014 Transisi untuk Elemen Berbeda _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB015 Latihan_ Implementasi Transisi untuk Elemen Berbeda _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB016 Aksesibilitas untuk Animasi _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB017 Pengantar Studi Kasus_ City Care App _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB018 Latihan Studi Kasus_ Penjelasan Starter Project _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB019 Latihan Studi Kasus_ Mengimplementasikan View Transition _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AB020 Rangkuman Transisi dan Animasi _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AC001Pengantar Dunia Media _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AC002 Pengenalan Media Stream API _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AC003 Latihan_ Stream Camera Pertama _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AC004 Bekerja dengan MediaStream _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AC005 Latihan_ Menangkap dengan Canvas API _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AC006 Canvas API _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AC007 Latihan_ Constraint untuk Media Stream _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AC008 Mengatur Constraint MediaStream _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AC009 Front dan Rear Camera untuk Mobile _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AC010 Menyimpan ke Local Machine _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AC011 Studi Kasus_ Kamera untuk Halaman Tambah _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AC012 Rangkuman Dunia Media _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AD001 Pengantar Map dan Location _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AD002 Pengenalan Map dan Location _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AD003 Dasar-Dasar Peta Digital _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AD003 Latihan_ Membuat Peta Interaktif Pertama _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AD004 Langkah Awal Peta Digital _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AD005 Marker dan Icon _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AD006 Interaktif dengan User _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AD007 Latihan_ Menampilkan Custom Data _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AD008 GeoJSON, Custom Data Map _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AD009 Geolocation API, Real-Time Location _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AD010 MapTiler, Map Service Alternative _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AD011 Latihan_ Custom Map dengan MapTiler _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AD012 Bekerja dengan Layer Group dan Control _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AD014 Latihan Studi Kasus_ Mendapatkan Koordinat Baru _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html
+@AD015 Rangkuman Map dan Location _ Belajar Pengembangan Web Intermediate _ Dicoding Indonesia.html

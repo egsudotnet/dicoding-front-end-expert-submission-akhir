@@ -1,0 +1,266 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Berikut adalah aturan (rules) untuk **Cursor AI** yang disusun berdasarkan dokumen instruksi submission proyek pertama dari Dicoding Indonesia. Aturan ini dirancang untuk memastikan bahwa kode yang dihasilkan oleh Cursor AI memenuhi kriteria wajib dan opsional proyek, serta mematuhi ketentuan submission.
+
+---
+
+### **Cursor AI Rules untuk Proyek Pertama - Belajar Pengembangan Web Intermediate**
+
+#### **1. Tujuan Proyek**
+- Membuat aplikasi web bertema **berbagi cerita**, **jualan online**, atau **katalog film** menggunakan **Story API** sebagai sumber data.
+- Aplikasi harus memenuhi **kriteria wajib** dan, jika memungkinkan, **kriteria opsional** untuk mendapatkan penilaian tinggi.
+- Aplikasi harus bebas dari plagiarisme dan mematuhi **Terms of Use** Dicoding (tingkat kesamaan kode < 70%).
+
+---
+
+#### **2. Kriteria Wajib**
+
+##### **Kriteria Wajib 1: Menggunakan API sebagai Sumber Data**
+- Gunakan **Story API** ([https://story-api.dicoding.dev/v1/](mdc:https:/story-api.dicoding.dev/v1)) sebagai sumber data utama.
+- Pastikan semua permintaan API dilakukan dengan benar, termasuk autentikasi jika diperlukan.
+- Jangan gunakan API lain kecuali yang disediakan atau untuk keperluan peta digital (misalnya, MapTiler, Leaflet).
+
+##### **Kriteria Wajib 2: Arsitektur Single-Page Application (SPA)**
+- Terapkan arsitektur **Single-Page Application** dengan:
+  - **Routing berbasis hash** (#) untuk navigasi di browser.
+  - Pola **Model-View-Presenter (MVP)** untuk pengelolaan data ke antarmuka pengguna.
+- Hindari penggunaan **JavaScript framework** seperti React, Angular, atau Vue untuk membangun UI.
+
+##### **Kriteria Wajib 3: Menampilkan Data**
+- Tampilkan data dari API dalam bentuk **daftar** dengan ketentuan:
+  - Setiap item daftar menampilkan **minimal 1 gambar** dan **3 data teks**.
+  - Sertakan **peta digital** yang menunjukkan lokasi data.
+  - Peta harus memiliki **marker** dengan **popup** saat diklik.
+- Jika menggunakan layanan peta (misalnya, MapTiler), sertakan **API key** dalam file `STUDENT.txt` di root proyek.
+
+##### **Kriteria Wajib 4: Fitur Tambah Data Baru**
+- Implementasikan fitur untuk menambahkan data baru ke API melalui **formulir** di halaman terpisah.
+- Formulir harus mencakup:
+  - Pengambilan **gambar** menggunakan **kamera** dengan MediaStream. Pastikan stream dinonaktifkan setelah digunakan.
+  - Pengambilan **latitude** dan **longitude** melalui **event klik** pada peta digital.
+- Gunakan library peta digital apa pun (misalnya, Leaflet) jika diperlukan.
+
+##### **Kriteria Wajib 5: Aksesibilitas sesuai Standar WCAG**
+- Terapkan aksesibilitas dengan:
+  - **Skip to content** untuk navigasi cepat.
+  - **Teks alternatif** (alt text) pada semua gambar esensial.
+  - **Label** yang terkait dengan setiap elemen `<input>` pada formulir.
+  - Gunakan **semantic element** (misalnya, `<header>`, `<main>`, `<nav>`) untuk struktur halaman dan **landmarking HTML**.
+
+##### **Kriteria Wajib 6: Transisi Halaman yang Halus**
+- Gunakan **View Transition API** untuk menerapkan transisi halaman yang halus.
+- Pastikan transisi sesuai dengan konteks pengguna dan tidak mengganggu pengalaman pengguna.
+
+---
+
+#### **3. Kriteria Opsional**
+
+##### **Kriteria Opsional 1: Tampilan Menarik**
+- Gunakan **pemilihan warna** yang harmonis (referensi: [colorhunt.co](mdc:https:/colorhunt.co)).
+- Atur **tata letak elemen** agar tidak bertumpuk, dengan **padding** dan **margin** yang sesuai.
+- Pilih **font** yang mudah dibaca.
+- Tambahkan **ikon** dari [Font Awesome](mdc:https:/fontawesome.com/v5/search) atau [Feather Icons](mdc:https:/github.com/feathericons/feather) untuk memperkaya tampilan.
+
+##### **Kriteria Opsional 2: Mobile Friendly**
+- Pastikan aplikasi **responsif** dan mudah digunakan di perangkat kecil (mobile).
+- Gunakan **media queries** CSS untuk mendukung berbagai ukuran layar.
+
+##### **Kriteria Opsional 3: Kustomisasi Transisi Halaman**
+- Gunakan **Animation API** untuk membuat transisi halaman yang unik dan menarik.
+
+##### **Kriteria Opsional 4: Beragam Gaya Peta**
+- Terapkan **layer control** pada peta digital dengan minimal **dua tile layer** (misalnya, menggunakan MapTiler).
+- Jika menggunakan Leaflet, gunakan **plugin tambahan** untuk mendukung vector tile.
+
+---
+
+#### **4. Penilaian**
+- Submission dinilai dengan skala **1–5 bintang** oleh reviewer:
+  - **1 bintang**: Memenuhi kriteria wajib tetapi terindikasi plagiat.
+  - **2 bintang**: Memenuhi kriteria wajib tetapi kode tidak rapi (komentar kode berlebih, variabel/fungsi tidak terpakai, dll.).
+  - **3 bintang**: Memenuhi kriteria wajib tanpa tambahan.
+  - **4 bintang**: Memenuhi kriteria wajib + minimal 3 kriteria opsional.
+  - **5 bintang**: Memenuhi kriteria wajib + semua kriteria opsional.
+- Submission ditolak jika tidak memenuhi kriteria wajib atau melanggar ketentuan (misalnya, plagiat).
+
+---
+
+#### **5. Ketentuan Submission**
+- **Berkas yang Dikirim**:
+  - Sertakan file **HTML**, **CSS**, **JavaScript**, dan aset lainnya dalam format **ZIP**.
+  - Jangan sertakan direktori `node_modules` dalam ZIP.
+  - Sertakan file `STUDENT.txt` dengan API key (jika ada) di root proyek.
+- **Starter Project**:
+  - Gunakan salah satu starter project:
+    - [Webpack](mdc:https:/raw.githubusercontent.com/dicodingacademy/a219-web-intermediate-labs/099-shared-files/starter-project-with-webpack.zip)
+    - [Vite](mdc:https:/raw.githubusercontent.com/dicodingacademy/a219-web-intermediate-labs/099-shared-files/starter-project-with-vite.zip)
+- **Proses Review**:
+  - Review dilakukan dalam **3 hari kerja** (tidak termasuk akhir pekan/libur nasional).
+  - Hindari submit berulang untuk mempercepat proses penilaian.
+  - Hasil review dikirim via email dan dapat dilihat di [halaman submission](mdc:https:/www.dicoding.com/academysubmissions/my).
+
+---
+
+#### **6. Hal yang Harus Dihindari**
+- **Plagiarisme**: Kode harus asli, hanya gunakan sumber eksternal sebagai referensi (kesamaan < 70%).
+- **MediaStream Aktif**: Pastikan kamera/mikrofon dimatikan setelah digunakan.
+- **Framework JS**: Jangan gunakan React, Angular, Vue, atau framework serupa.
+- **Berkas Besar**: Jangan sertakan `node_modules` dalam ZIP.
+- **Submission Siswa Lain**: Mengirimkan proyek orang lain akan ditolak.
+
+---
+
+#### **7. Struktur File Proyek**
+Berikut adalah struktur file yang disarankan untuk memastikan organisasi kode yang rapi:
+```
+project-root/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── app.js          # Logika utama aplikasi
+│   ├── router.js       # Pengelolaan routing berbasis hash
+│   ├── presenter.js    # Logika presenter (MVP)
+│   ├── model.js        # Pengelolaan data API
+│   └── view.js         # Pengelolaan tampilan
+├── assets/
+│   ├── images/         # Gambar statis
+│   └── icons/          # Ikon (Font Awesome/Feather Icons)
+├── STUDENT.txt         # API key untuk layanan peta (jika ada)
+└── README.md           # Penjelasan singkat proyek
+```
+
+---
+
+#### **8. Panduan Pengkodean untuk Cursor AI**
+- **Bahasa dan Teknologi**:
+  - Gunakan **HTML5**, **CSS3**, dan **JavaScript (ES6+)**.
+  - Gunakan **Fetch API** untuk komunikasi dengan Story API.
+  - Gunakan **Leaflet** atau library peta lain untuk peta digital.
+  - Gunakan **MediaDevices.getUserMedia** untuk akses kamera.
+- **Kualitas Kode**:
+  - Tulis kode yang **bersih**, **terdokumentasi**, dan **terstruktur**.
+  - Hindari variabel/fungsi yang tidak digunakan.
+  - Gunakan **nama variabel/fungsi yang deskriptif**.
+  - Tambahkan **komentar kode** secukupnya untuk menjelaskan logika kompleks.
+- **Aksesibilitas**:
+  - Tambahkan atribut `alt` pada `<img>`.
+  - Gunakan `<label for="id">` untuk setiap `<input>`.
+  - Gunakan elemen semantik seperti `<main>`, `<nav>`, `<article>`.
+  - Tambahkan tombol **skip to content** di awal halaman.
+- **Transisi**:
+  - Gunakan **View Transition API** untuk transisi halaman.
+  - Jika menerapkan Animation API (opsional), pastikan animasi ringan dan tidak berlebihan.
+- **Responsivitas**:
+  - Gunakan **CSS Flexbox** atau **Grid** untuk tata letak.
+  - Tambahkan **media queries** untuk mendukung perangkat mobile.
+
+---
+
+#### **9. Contoh Snippet Kode**
+Berikut adalah contoh snippet untuk beberapa fitur wajib:
+
+##### **Routing Berbasis Hash**
+```javascript
+// js/router.js
+window.addEventListener('hashchange', () => {
+  const route = window.location.hash.slice(1) || 'home';
+  renderPage(route);
+});
+
+function renderPage(route) {
+  const mainContent = document.querySelector('#main-content');
+  switch (route) {
+    case 'home':
+      mainContent.innerHTML = '<h1>Home Page</h1>';
+      break;
+    case 'add':
+      mainContent.innerHTML = '<h1>Add New Data</h1>';
+      break;
+    default:
+      mainContent.innerHTML = '<h1>Page Not Found</h1>';
+  }
+}
+```
+
+##### **Akses Kamera**
+```javascript
+// js/camera.js
+async function startCamera() {
+  const video = document.querySelector('#camera-stream');
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+    video.srcObject = stream;
+  } catch (error) {
+    console.error('Error accessing camera:', error);
+  }
+}
+
+function stopCamera() {
+  const video = document.querySelector('#camera-stream');
+  const stream = video.srcObject;
+  if (stream) {
+    stream.getTracks().forEach(track => track.stop());
+    video.srcObject = null;
+  }
+}
+```
+
+##### **Integrasi Peta Digital (Leaflet)**
+```javascript
+// js/map.js
+function initMap() {
+  const map = L.map('map').setView([0, 0], 13);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  map.on('click', (e) => {
+    const { lat, lng } = e.latlng;
+    L.marker([lat, lng]).addTo(map)
+      .bindPopup(`Latitude: ${lat}, Longitude: ${lng}`)
+      .openPopup();
+  });
+}
+```
+
+##### **Skip to Content**
+```html
+<!-- index.html -->
+<a href="#main-content" class="skip-link">Skip to content</a>
+<main id="main-content">
+  <!-- Konten utama -->
+</main>
+```
+
+```css
+/* css/style.css */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 0;
+}
+```
+
+---
+
+#### **10. Peringatan**
+- Pastikan semua kode diuji secara menyeluruh untuk memastikan tidak ada bug, terutama pada:
+  - **MediaStream** (kamera harus dinonaktifkan setelah digunakan).
+  - **API request** (tangani error dengan baik).
+  - **Aksesibilitas** (uji dengan screen reader jika memungkinkan).
+- Simpan proyek secara teratur dan uji di berbagai perangkat untuk memastikan responsivitas.
+
+---
+
+Dengan mengikuti aturan ini, Cursor AI dapat menghasilkan kode yang sesuai dengan kriteria proyek, meningkatkan peluang mendapatkan penilaian tinggi, dan memastikan kepatuhan terhadap ketentuan Dicoding. Jika ada pertanyaan atau kebutuhan tambahan, beri tahu saya!

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <header>
+      <navbar-element brandName="<%= brandName %>"></navbar-element>
+    </header>
+
+    <main class="container mt-7">
+      <profile-card-element
+        name="Ulinnaja Aldi"
+        description="Hai, teman-teman semua! Untuk pemberitahuan, ini nantinya adalah dashboard profile
+      dari Ceritain bukan dashboad Admin!"
+      ></profile-card-element>
+
+      <section class="container">
+        <div class="d-flex justify-content-center align-content-center my-5" id="spinner">
+          <div class="spinner-grow" role="status"></div>
+          <div class="spinner-grow" role="status"></div>
+          <div class="spinner-grow" role="status"></div>
+        </div>
+
+        <div
+          class="row justify-content-center align-items-center mt-2 gap-3"
+          id="profile-story-list"
+        ></div>
+      </section>
+    </main>
+
+    <footer class="container py-5">
+      <footer-element></footer-element>
+    </footer>
+  </body>
+</html>
